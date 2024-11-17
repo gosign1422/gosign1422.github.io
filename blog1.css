@@ -309,6 +309,11 @@ footer {
     margin-bottom: 1rem;
     text-align: center;
 }
+.blog-subtitle {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    text-align: center;}
 
 .blog-meta {
     font-size: 1.2rem;

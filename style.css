@@ -107,6 +107,11 @@ body {
 
 .response {
     color: var(--color-text-dim);
+    background-color: #00ff00; /* Bright green background */
+    color: #000; /* Black text color for contrast */
+    padding: 0.2rem 0.4rem; /* Add some padding for a neat highlight effect */
+    border-radius: 4px; /* Optional: rounded corners */
+    font-weight: bold; /* Make it stand out more */
 }
 
 .cursor {
@@ -118,6 +123,7 @@ body {
     display: flex;
     gap: 1.5rem;
     margin: 1rem 0;
+    
 }
 
 .social-links a {
@@ -309,4 +315,25 @@ footer {
   .blog-link:hover {
     cursor: pointer;
   }
-  
+
+
+  /* HIGHLIGHTING */
+.highlight_glow {
+    color: #00ff00; /* Green text */
+    text-shadow: 0 0 8px #00ff00; /* Glowing effect */
+    font-weight: bold;
+}
+.highlight_underline {
+    border-bottom: 2px solid #00ff00; /* Green underline */
+    font-weight: bold;
+}
+.highlight_allout {
+    background-color: #00ff00; /* Bright green background */
+    color: #000; /* Black text color for contrast */
+    padding: 0.2rem 0.4rem; /* Add some padding for a neat highlight effect */
+    border-radius: 4px; /* Optional: rounded corners */
+    font-weight: bold; /* Make it stand out more */
+}
+.subheading {
+    font-size:large;
+}
