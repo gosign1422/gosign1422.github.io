@@ -28,25 +28,28 @@
                 <span class="prompt">$</span> whoami<br>
                 <span class="response">Yash Gusain</span><br>
                 <span class="prompt">$</span> cat personality.sh<br>
-                <span class="response">18 year old | CSE 1rst Year | Icecream Lover</span><br>
+                <span class="response">19 year old | Ice Cream Lover | Certified Nerd</span><br>
                 <span class="prompt">$</span> ls social/<br>
                 <div class="social-links">
-                    <a href="https://github.com/gosign1422" aria-label="GitHub">
-                        <i data-lucide="github"></i>
+                    <a href="https://github.com/gosign1422" aria-label="GitHub" class="social-link">
+                        <i data-lucide="github" class="social-icon"></i>
                     </a>
-                    <a href="https://x.com/gosign1422" aria-label="Twitter">
-                        <i data-lucide="twitter"></i>
+                    <a href="https://x.com/gosign1422" aria-label="X" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                            <path d="M4 4l11.733 16h4.267l-11.733 -16z"/>
+                            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
+                        </svg>
                     </a>
-
-                    <a href="https://open.spotify.com/user/31iy3rmqqciyfeh7e5fqnnx3ejri?si=8aad6946d62348be" aria-label="Spotify">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                    <a href="https://www.linkedin.com/in/yash-gusain/" aria-label="LinkedIn" class="social-link">
+                        <i data-lucide="linkedin" class="social-icon"></i>
+                    </a>
+                    <a href="https://open.spotify.com/user/31iy3rmqqciyfeh7e5fqnnx3ejri?si=8aad6946d62348be" aria-label="Spotify" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-spotify social-icon" viewBox="0 0 16 16">
                             <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
                         </svg>
                     </a>
-                    
-                    
-                    <a href="https://mail.google.com/mail/u/1/#inbox?compose=CllgCJZcQxpBGkwnWdWzRdxKzBdBvRpqxgcJKDFjhHwvqRdPhQkPrKhZMftPbkxDTZRMDFJsWpg" aria-label="Email">
-                        <i data-lucide="mail"></i>
+                    <a href="https://mail.google.com/mail/u/1/#inbox?compose=CllgCJZcQxpBGkwnWdWzRdxKzBdBvRpqxgcJKDFjhHwvqRdPhQkPrKhZMftPbkxDTZRMDFJsWpg" aria-label="Email" class="social-link">
+                        <i data-lucide="mail" class="social-icon"></i>
                     </a>
                 </div>
                 <span class="prompt">$</span><span class="cursor">█</span>
@@ -54,7 +57,33 @@
         </div>
     </section>
 
-    <!-- Featured Section
+    <!-- Image Carousel Section -->
+    <section class="carousel-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="prompt">$</span> ls ./gallery
+            </div>
+            <div class="carousel">
+                <button class="carousel-button prev">❮</button>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="images/1.jpg" alt="Project 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/4.jpg" alt="Project 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/2.jpg" alt="Project 2">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-button next">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
     <section class="featured">
         <div class="container">
             <div class="section-header">
@@ -64,48 +93,55 @@
                 <div class="terminal-card">
                     <div class="card-header">
                         <i data-lucide="shield"></i>
-                        <span>Security Research</span>
+                        <a href="https://unicheatsheet.com" target="_blank" class="project-link">
+                            <span>UniCheatSheet.com</span>
+                        </a>
                     </div>
                     <div class="card-content">
-                        <p>Discovering and documenting vulnerabilities in web applications and networks.</p>
+                        <p>Studying can be a real pain, especially when all that you want is 'Marks'.</p>
+                        <p>"20% of the effort can give you 80% of the results", and that's the 20% of content we provide.</p>
+                        <p><a href="https://unicheatsheet.com" target="_blank" class="website-link">Website Link ↗</a></p>
                         <div class="tech-stack">
-                            <span>Burp Suite</span>
-                            <span>Metasploit</span>
-                            <span>Wireshark</span>
+                            <span>Founder</span>
+                            <span>Creator</span>
+
                         </div>
                     </div>
                 </div>
                 <div class="terminal-card">
                     <div class="card-header">
                         <i data-lucide="code"></i>
-                        <span>Exploit Development</span>
+                        <a href="https://buyfromuni.com" target="_blank" class="project-link">
+                            <span>BuyfromUni.com</span>
+                        </a>
                     </div>
                     <div class="card-content">
-                        <p>Creating proof-of-concept exploits and security tools.</p>
+                        <p>A unified platform enabling students of UPES to sell their creations to their peers and achieve financial independence.</p>
+                        <p><a href="https://buyfromuni.com" target="_blank" class="website-link">Website Link ↗</a></p>
                         <div class="tech-stack">
-                            <span>Python</span>
-                            <span>C++</span>
-                            <span>Assembly</span>
+                            <span>Founder</span>
+                            <span>Creator</span>
+
                         </div>
                     </div>
                 </div>
                 <div class="terminal-card">
                     <div class="card-header">
                         <i data-lucide="flag"></i>
-                        <span>CTF Competitions</span>
+                        <span>College Stats</span>
                     </div>
                     <div class="card-content">
-                        <p>Participating in and writing walkthroughs for CTF challenges.</p>
+                        <p>UPES Bidholi,Dehradun</p>
+                        <p>Course - B.Tech CSE</p>
+                        <p>SGPA - 9.60 [Sem 1]</p>
+
                         <div class="tech-stack">
-                            <span>Web</span>
-                            <span>Pwn</span>
-                            <span>Crypto</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Blog Section -->
     <section class="blog">
@@ -114,25 +150,6 @@
                 <span class="prompt">$</span> ls blog/latest
             </div>
             <div class="blog-grid">
-                <a href="blog1.html" class="blog1-link">
-                <article class="blog-card">
-                    <div class="card-header">
-                        <span class="date">16-11-2024</span>
-                        <span class="file-type">.md</span>
-                    </div>
-                    <div class="card-content">
-                        <h3>Self Improvement is Ma******tion</h3>
-                        <p>yes, this is a quote from Fight Club.</p>
-                        <p></p>
-                        <div class="tags">
-                            <span>self help</span>
-                            <span>dopamine</span>
-                            <span>rat race</span>
-                        </div>
-                    </div>
-                </article>
-            </a>
-            <div class="blog-grid">
                 <a href="blog2.html" class="blog1-link">
                 <article class="blog-card">
                     <div class="card-header">
@@ -140,7 +157,7 @@
                         <span class="file-type">.md</span>
                     </div>
                     <div class="card-content">
-                        <h3>The Instagram Trap: Why I Choose to Stay Away.</h3>
+                        <h3>The Instagram Trap</h3>
                         <p>(& when I might consider joining)</p>
                         <div class="tags">
                             <span>content</span>
@@ -165,13 +182,33 @@
                     </div>
                 </article> -->
             </div>
+            <div class="blog-grid">
+                <a href="blog1.html" class="blog1-link">
+                <article class="blog-card">
+                    <div class="card-header">
+                        <span class="date">16-11-2024</span>
+                        <span class="file-type">.md</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Self Improvement is Ma******tion</h3>
+                        <p>yes, this is a quote from Fight Club.</p>
+                        <p></p>
+                        <div class="tags">
+                            <span>self help</span>
+                            <span>dopamine</span>
+                            <span>rat race</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <span class="prompt">$</span> echo "© 2024 Yash Gusain | All rights reserved"
+            <span class="prompt">$</span> echo "© 2006-2025 Yash Gusain | All rights reserved"
         </div>
     </footer>
 
@@ -217,10 +254,11 @@
         setInterval(draw, 30);
 
         // Terminal cursor blink
-        const cursor = document.querySelector('.cursor');
+        const cursor = document.querySelector('.cursor');   
         setInterval(() => {
             cursor.style.opacity = cursor.style.opacity === '0' ? '1' : '0';
         }, 600);
     </script>
+    <script src="carousel.js"></script>
 </body>
 </html>
