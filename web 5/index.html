@@ -1,0 +1,535 @@
+<!DOCTYPE html>                    
+                      
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Gosign</title>
+    <link rel="icon" type="image/png" href="logo1.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <!-- Terminal Header -->
+    <header class="terminal-header">
+        <div class="terminal-controls">
+            <span class="control close"></span>
+            <span class="control minimize"></span>
+            <span class="control maximize"></span>
+        </div>
+        <div class="terminal-title">terminal@gosign:~</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="matrix-bg"></div>
+        <div class="terminal-window">
+            <div class="terminal-output">
+                <span class="prompt">$</span> whoami<br>
+                <span class="response" style="position: relative; display: inline-block; margin-top: 5px; width: 100%; white-space: normal; word-wrap: break-word;"><span style="animation-delay: 0s;">Yash Gusain</span></span><br>
+                <span class="prompt">$</span> cat personality.sh<br>
+                <span class="response" style="position: relative; display: inline-block; margin-top: 5px; width: 100%; white-space: normal; word-wrap: break-word;"><span style="animation-delay: 0s;">19 year old | Ice Cream Lover | Certified Nerd</span></span><br>
+                <span class="prompt">$</span> ls social/<br>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/yash-gusain/" aria-label="LinkedIn" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="linkedin" class="social-icon"></i>
+                    </a>
+                    <a href="https://www.instagram.com/gosign_yash/" aria-label="Instagram" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="instagram" class="social-icon"></i>
+                    </a>
+                    <a href="https://x.com/gosign1422" aria-label="X" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                            <path d="M4 4l11.733 16h4.267l-11.733 -16z"/>
+                            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
+                        </svg>
+                    </a>
+                    <a href="https://open.spotify.com/user/31iy3rmqqciyfeh7e5fqnnx3ejri?si=8aad6946d62348be" aria-label="Spotify" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-spotify social-icon" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/gosign1422" aria-label="GitHub" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="github" class="social-icon"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@ItsMeGosign" aria-label="YouTube" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube social-icon" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                        </svg>
+                    </a>
+
+                </div>
+                <span class="prompt">$</span><span class="cursor">█</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Carousel Section -->
+    <section class="carousel-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="prompt">$</span> ls ./gallery
+            </div>
+            <div class="carousel">
+                <button class="carousel-button prev">❮</button>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="https://res.cloudinary.com/dqu8ex7bn/image/upload/v1743305049/1_nwoti6.jpg" alt="Project 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://res.cloudinary.com/dqu8ex7bn/image/upload/v1748333210/WhatsApp_Image_2025-05-17_at_14.33.35_88bd0d8f_v3rpqb.jpg" alt="Project 1">
+                        </div>
+
+                    </div>
+                </div>
+                <button class="carousel-button next">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="prompt">$</span> cat featured-work.md
+            </div>
+            <div class="terminal-grid">
+                <div class="terminal-card">
+                    <div class="card-header">
+                        <i data-lucide="code"></i>
+                        <a href="https://ecoalert.in" target="_blank" class="project-link">
+                            <span>EcoAlert.in</span>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <p>Real-time pollution reporting and community-powered solutions for a cleaner, greener planet.</p>
+                        <p><a href="https://ecoalert.in" target="_blank" class="website-link">Visit ↗</a></p>
+                        <div class="tech-stack">
+                            <span>Co-Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="terminal-card">
+                    <div class="card-header">
+                        <i data-lucide="code"></i>
+                        <a href="https://buyfromuni.com" target="_blank" class="project-link">
+                            <span>BuyfromUni.com</span>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <p>BuyFromUni.com is a free, simple, and transparent housing platform for UPES students, with direct WhatsApp contact—no logins, no commissions.</p>
+                        <p><a href="https://buyfromuni.com" target="_blank" class="website-link">Visit ↗</a></p>
+                        <div class="tech-stack">
+                            <span>Founder</span>
+                            <span>Creator</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="terminal-card">
+                    <div class="card-header">
+                        <i data-lucide="code"></i>
+                        <a href="https://unicheatsheet.com" target="_blank" class="project-link">
+                            <span>UniCheatSheet.com</span>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <p>Studying can be a real pain, especially when all that you want is 'Marks'.</p>
+                        <p>"20% of the effort can give you 80% of the results", and that's the 20% of content we provide.</p>
+                        <p><a href="https://unicheatsheet.com" target="_blank" class="website-link">Visit ↗</a></p>
+                        <div class="tech-stack">
+                            <span>Founder</span>
+                            <span>Creator</span>
+
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="terminal-card">
+                    <div class="card-header">
+                        <i data-lucide="flag"></i>
+                        <span>College Stats</span>
+                    </div>
+                    <div class="card-content">
+                        <p>UPES Bidholi,Dehradun</p>
+                        <p>Course - B.Tech CSE</p>
+                        <p>SGPA - 9.60 [Sem 1]</p>
+
+                        <div class="tech-stack">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <div class="container">
+            <div class="section-header">
+                <span class="prompt">$</span> ls blog/latest
+            </div>
+            <div class="blog-grid">
+                <a href="blog5.html" class="blog1-link">
+                <article class="blog-card">
+                    <div class="card-header">
+                        <span class="date">30-05-2025</span>
+                        <span class="file-type">.md</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>The Selfishness Formula</h3>
+                        <p>A Reflecion on Happiness</p>
+                        <div class="tags">
+                            <span>happiness</span>
+                            <span>selfishness</span>
+                            <span>self-care</span>
+                        </div>
+                    </div>
+                </article>
+                </div>
+            <div class="blog-grid">
+                <a href="blog4.html" class="blog1-link">
+                <article class="blog-card">
+                    <div class="card-header">
+                        <span class="date">26-05-2025</span>
+                        <span class="file-type">.md</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Fulfilment.</h3>
+                        <p>Embracing your sense of purpose</p>
+                        <div class="tags">
+                            <span>unfair advantage</span>
+                            <span>think differently</span>
+                        </div>
+                    </div>
+                </article>
+                </div>
+            <div class="blog-grid">
+                <a href="blog3.html" class="blog1-link">
+                <article class="blog-card">
+                    <div class="card-header">
+                        <span class="date">11-03-2025</span>
+                        <span class="file-type">.md</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>SPOT 1</h3>
+                        <p>A Testament to Spontaneity</p>
+                        <div class="tags">
+                            <span>instincts</span>
+                            <span>action</span>
+                            <span>frequency</span>
+                        </div>
+                    </div>
+                </article>
+                </div>
+            <div class="blog-grid">
+                <a href="blog2.html" class="blog1-link">
+                <article class="blog-card">
+                    <div class="card-header">
+                        <span class="date">17-11-2024</span>
+                        <span class="file-type">.md</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>The Instagram Trap</h3>
+                        <p>(& when I might consider joining)</p>
+                        <div class="tags">
+                            <span>content</span>
+                            <span>reels</span>
+                            <span>addiction</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- <article class="blog-card">
+                    <div class="card-header">
+                        <span class="date">2024-03-03</span>
+                        <span class="file-type">.md</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Reverse Engineering Malware</h3>
+                        <p>Tools and techniques for analyzing malicious software.</p>
+                        <div class="tags">
+                            <span>malware</span>
+                            <span>analysis</span>
+                            <span>tools</span>
+                        </div>
+                    </div>
+                </article> -->
+            </div>
+            <div class="blog-grid">
+                <a href="blog1.html" class="blog1-link">
+                <article class="blog-card">
+                    <div class="card-header">
+                        <span class="date">16-11-2024</span>
+                        <span class="file-type">.md</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Self Improvement is Ma******tion</h3>
+                        <p>yes, this is a quote from Fight Club.</p>
+                        <p></p>
+                        <div class="tags">
+                            <span>self help</span>
+                            <span>dopamine</span>
+                            <span>rat race</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            </a>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <span class="prompt">$</span> echo "© 2006-2025 Yash Gusain | All rights reserved"
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        // Matrix rain effect
+        const canvas = document.createElement('canvas');
+        const matrix = canvas.getContext('2d');
+        document.querySelector('.matrix-bg').appendChild(canvas);
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
+        const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const nums = '0123456789';
+        const alphabet = katakana + latin + nums;
+
+        const fontSize = 27;
+        const columns = canvas.width/fontSize;
+
+        const rainDrops = Array(Math.floor(columns)).fill(1);
+
+        function draw() {
+            matrix.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            matrix.fillRect(0, 0, canvas.width, canvas.height);
+
+            matrix.fillStyle = '#0F0';
+            matrix.font = fontSize + 'px monospace';
+
+            for(let i = 0; i < rainDrops.length; i++) {
+                const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+                matrix.fillText(text, i*fontSize, rainDrops[i]*fontSize);
+                
+                if(rainDrops[i]*fontSize > canvas.height && Math.random() > 0.975) {
+                    rainDrops[i] = 0;
+                }
+                rainDrops[i]++;
+            }
+        }
+
+        setInterval(draw, 30);
+
+        // Terminal cursor blink
+        const cursor = document.querySelector('.cursor');   
+        setInterval(() => {
+            cursor.style.opacity = cursor.style.opacity === '0' ? '1' : '0';
+        }, 600);
+        
+        // Add scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+            
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        
+                        // Trigger carousel animation when carousel section becomes visible
+                        if (entry.target.classList.contains('carousel-section')) {
+                            initiateCarouselSlide();
+                        }
+                    }
+                });
+            }, observerOptions);
+            
+            sections.forEach(section => {
+                if (section.classList.contains('hero')) return;
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                observer.observe(section);
+            });
+            
+            // Function to handle automatic carousel slide on section visibility
+            function initiateCarouselSlide() {
+                const track = document.querySelector('.carousel-track');
+                if (!track) return;
+                
+                // Add class to trigger slide animation
+                track.classList.add('slide-animation');
+                
+                // Set up sliding functionality
+                let currentPosition = 0;
+                const slides = document.querySelectorAll('.carousel-slide');
+                const slideWidth = slides[0].clientWidth;
+                
+                // Initial setup with consistent transition timing
+                track.style.transition = 'transform 0.6s ease-in-out';
+                
+                // Handle manual navigation with consistent transition times
+                const nextButton = document.querySelector('.carousel-button.next');
+                const prevButton = document.querySelector('.carousel-button.prev');
+                
+                // Function to update slide positions based on screen size
+                function updateCarouselSize() {
+                    const newSlideWidth = slides[0].clientWidth;
+                    track.style.transform = `translateX(-${currentPosition * newSlideWidth}px)`;
+                }
+                
+                // Add resize event listener
+                window.addEventListener('resize', updateCarouselSize);
+                
+                if (nextButton) {
+                    nextButton.addEventListener('click', () => {
+                        // Equal transition time for all images
+                        track.style.transition = 'transform 0.6s ease-in-out';
+                        currentPosition = (currentPosition + 1) % slides.length;
+                        track.style.transform = `translateX(-${slides[0].clientWidth * currentPosition}px)`;
+                    });
+                }
+                
+                if (prevButton) {
+                    prevButton.addEventListener('click', () => {
+                        // Equal transition time for all images
+                        track.style.transition = 'transform 0.6s ease-in-out';
+                        currentPosition = (currentPosition - 1 + slides.length) % slides.length;
+                        track.style.transform = `translateX(-${slides[0].clientWidth * currentPosition}px)`;
+                    });
+                }
+            }
+        });
+    </script>
+    <script src="carousel.js"></script>
+    
+    <!-- Add particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 40,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#00ff00"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#00ff00",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        });
+    </script>
+</body>
+</html>

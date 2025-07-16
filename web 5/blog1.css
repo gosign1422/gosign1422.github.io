@@ -1,0 +1,692 @@
+/* Blog Post Specific Styles */
+html {
+    scroll-behavior: smooth;
+}
+/* Reset and Base Styles */                                          
+:root {
+    --color-bg: #0a0a0a;
+    --color-text: #00ff00;
+    --color-text-dim: #00cc00;
+    --color-terminal: #000000;
+    --color-terminal-header: #2d2d2d;
+    --glow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Terminal Header */
+.terminal-header {
+    background: var(--color-terminal-header);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.terminal-controls {
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 1rem;
+}
+
+.control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.close { background: #ff5f56; }
+.minimize { background: #ffbd2e; }
+.maximize { background: #27c93f; }
+
+.terminal-title {
+    color: var(--color-text-dim);
+    font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.matrix-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.matrix-bg canvas {
+    opacity: 0.1;
+}
+
+.terminal-window {
+    background: var(--color-terminal);
+    border: 1px solid var(--color-text);
+    border-radius: 4px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+    box-shadow: var(--glow);
+}
+
+.terminal-output {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.prompt {
+    color: var(--color-text);
+    margin-right: 0.5rem;
+}
+
+.response {
+    color: var(--color-text-dim);
+}
+
+.cursor {
+    animation: blink 1s step-end infinite;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.social-links a {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Featured Section */
+.featured {
+    padding: 4rem 0;
+}
+
+.section-header {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-text);
+}
+
+.terminal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.terminal-card {
+    background: var(--color-terminal);
+    border: 1px solid var(--color-text);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.terminal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--glow);
+}
+
+.card-header {
+    background: var(--color-text);
+    color: var(--color-terminal);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tech-stack span {
+    background: rgba(0, 255, 0, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    border: 1px solid var(--color-text);
+}
+
+/* Blog Section */
+.blog {
+    padding: 4rem 0;
+    background: rgba(0, 255, 0, 0.02);
+}
+
+.blog-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.blog-card {
+    background: var(--color-terminal);
+    border: 1px solid var(--color-text);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--glow);
+}
+
+.blog-card .card-header {
+    background: transparent;
+    color: var(--color-text);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-text);
+}
+
+.file-type {
+    color: var(--color-text-dim);
+}
+
+.blog-card .card-content {
+    padding: 1.5rem;
+}
+
+.blog-card h3 {
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tags span {
+    background: rgba(0, 255, 0, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    border: 1px solid var(--color-text);
+}
+
+/* Footer */
+footer {
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid var(--color-text);
+}
+
+/* Animations */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .terminal-window {
+        width: 95%;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    .terminal-output {
+        font-size: 1rem;
+    }
+
+    .terminal-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .blog-title {
+        font-size: 1.6rem;
+        margin-top: 2rem;
+    }
+    
+    .blog-content {
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 0 15px;
+        text-align: left; /* Left-aligned is more readable on mobile */
+    }
+    
+    .terminal-header {
+        padding: 0.4rem;
+    }
+    
+    .terminal-title {
+        font-size: 0.8rem;
+    }
+
+    /* Increase spacing between paragraphs */
+    .blog-content p {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Reduce padding in cards for more content space */
+    .card-content {
+        padding: 1rem;
+    }
+    
+    /* Add more space between sections */
+    .featured, .blog {
+        padding: 2rem 0;
+    }
+    
+    /* Adjust the hero section height */
+    .hero {
+        min-height: auto;
+        padding: 2rem 0;
+    }
+}
+
+/* Additional media queries for more screen sizes */
+@media (max-width: 480px) {
+    .terminal-window {
+        padding: 0.8rem;
+        margin: 0.5rem auto;
+    }
+    
+    .blog-title {
+        font-size: 1.4rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.7rem;
+    }
+    
+    .blog-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 0.7rem;
+    }
+    
+    .blog-meta {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .blog-content {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    .social-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .tags, .tech-stack {
+        gap: 0.3rem;
+    }
+    
+    .tags span, .tech-stack span {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.5rem;
+    }
+    
+    /* Reduce visual weight of less important elements */
+    .section-header {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Create more compact card layout */
+    .blog-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .blog-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.7rem;
+    }
+    
+    /* Use more streamlined terminal appearance */
+    .terminal-controls {
+        gap: 0.3rem;
+    }
+    
+    .control {
+        width: 8px;
+        height: 8px;
+    }
+    
+    /* Increase content readability */
+    .blog-content {
+        letter-spacing: 0.01rem;
+    }
+    
+    /* Add better content rhythm */
+    .blog-grid {
+        gap: 1.5rem;
+    }
+    
+    /* Improve footer spacing */
+    footer {
+        padding: 1.5rem 0;
+        font-size: 0.9rem;
+    }
+}
+
+/* Enhanced mobile layout - critical adjustment for reducing cramped feeling */
+@media (max-width: 600px) {
+    /* Improve content structure and reading experience */
+    .blog-content p {
+        margin-bottom: 1.2rem;
+        line-height: 1.6;
+    }
+    
+    /* Optimize terminal window for better mobile experience */
+    .terminal-window {
+        box-shadow: 0 0 8px rgba(0, 255, 0, 0.3);
+        border-width: 1px;
+    }
+    
+    /* Better highlight contrast for mobile */
+    .highlight_glow {
+        text-shadow: 0 0 5px #00ff00;
+    }
+    
+    /* More compact image containers */
+    .blog-image {
+        margin: 15px 0;
+    }
+    
+    .image-caption {
+        font-size: 0.8em;
+    }
+    
+    /* Reduce space around heading elements */
+    h2, h3 {
+        margin-top: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+/* Medium-sized screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .terminal-window {
+        max-width: 90%;
+        padding: 2rem;
+    }
+    
+    .blog-content {
+        max-width: 90%;
+        font-size: 1.1rem;
+    }
+}
+
+/* Additional refinements for mobile experience */
+@media (max-width: 480px) {
+    /* Reduce excessive vertical whitespace */
+    .hero {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    /* Make the blog post more concise */
+    .terminal-window {
+        box-shadow: none;
+    }
+    
+    /* Improve readability with tighter spacing */
+    .subheading {
+        font-size: 1.05rem;
+        margin: 1.2rem 0 0.7rem 0;
+    }
+    
+    /* Optimize for vertical space */
+    .terminal-header {
+        position: sticky;
+        top: 0;
+        z-index: 1001;
+    }
+}
+
+/* Ensure images are responsive */
+.featured-image, .content-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Make the terminal header more responsive */
+@media (max-width: 600px) {
+    .terminal-header {
+        padding: 0.3rem;
+    }
+    
+    .control {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .terminal-title {
+        font-size: 0.75rem;
+        max-width: 80%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+/* Improve readability on larger screens */
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .blog-content {
+        max-width: 1000px;
+        font-size: 1.3rem;
+    }
+}
+
+/* Fix issues with overflow content */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Ensure the blog is readable on smaller devices even in landscape */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 4rem 0;
+    }
+    
+    .terminal-window {
+        margin-top: 2rem;
+    }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-terminal);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-text);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-dim);
+}
+
+/* BLOG 1 Specific Changes */
+.blog-title {
+    font-size: 2rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.blog-subtitle {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    text-align: center;}
+
+.blog-meta {
+    font-size: 1.2rem;
+    color: var(--color-text-dim);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.blog-content p {
+    margin-bottom: 1rem;
+}
+.blog-content {
+    max-width: 800px; /* Constrain the width of the blog content */
+    margin: 0 auto; /* Center the content */
+    word-wrap: break-word; /* Ensure long words or URLs wrap properly */
+    text-align: justify; /* Improve text readability */
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--color-text);
+}
+.matrix-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1; /* Subtle effect */
+}
+.hero {
+    height: auto; /* Dynamic height to fit content */
+    min-height: 100vh; /* Full viewport height for smaller content */
+    padding: 3rem 0; /* Add more padding for better spacing */
+    position: relative;
+}
+
+.terminal-window {
+    width: 95%; /* Expand width to occupy more space */
+    max-width: 1200px; /* Increase maximum width */
+    max-height: none; /* Remove height constraint */
+    height: auto; /* Allow dynamic height */
+    padding: 3rem; /* Add padding for spaciousness */
+    margin: 0 auto; /* Center the content */
+    overflow: visible; /* Ensure no internal scrolling */
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); /* Glow effect for aesthetics */
+}
+
+.terminal-output {
+    font-size: 1.2rem; /* Keep text readable */
+    line-height: 1.8; /* Maintain proper spacing between lines */
+    padding: 1rem; /* Add internal padding */
+    margin: 0; /* Prevent any unintended margins */
+
+}
+
+/* HIGHLIGHTING */
+.highlight_glow {
+    color: #00ff00; /* Green text */
+    text-shadow: 0 0 8px #00ff00; /* Glowing effect */
+    font-weight: bold;
+}
+.highlight_underline {
+    border-bottom: 2px solid #00ff00; /* Green underline */
+    font-weight: bold;
+}
+.highlight_allout {
+    background-color: #00ff00; /* Bright green background */
+    color: #000; /* Black text color for contrast */
+    padding: 0.2rem 0.4rem; /* Add some padding for a neat highlight effect */
+    border-radius: 4px; /* Optional: rounded corners */
+    font-weight: bold; /* Make it stand out more */
+}
+.subheading {
+    font-size:large;
+}
+
+/* Add this to your CSS file to override default link colors */
+a {
+    color: var(--color-text); /* Uses your green text color */
+    text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Optional: adds underline on hover */
+}
+
+/* If you want visited links to also not be purple */
+a:visited {
+    color: var(--color-text);
+}
+
+/* Add this to your blog1.css file */
+.blog-image {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 5px;
+    border: 1px solid #00ff00;
+}
+
+.content-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    border: 1px solid #00ff00;
+}
+
+.image-caption {
+    font-style: italic;
+    color: #00ff00;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
